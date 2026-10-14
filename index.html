@@ -46,7 +46,7 @@ ul{margin:8px 0 16px 20px}
 
 <h2>4. Local Storage &amp; Deletion</h2>
 <ul>
-<li><strong>Stored on-device:</strong> scanned PDFs/images in app-private storage (`getApplicationDocumentsDirectory()/ScanVault`), PDF passwords in platform secure storage (iOS Keychain / Android EncryptedSharedPreferences), app-lock and settings in secure local preferences.</li>
+<li><strong>Stored on-device:</strong> scanned PDFs/images in app-private storage (`getApplicationDocumentsDirectory()/ScanLocker`), PDF passwords in platform secure storage (iOS Keychain / Android EncryptedSharedPreferences), app-lock and settings in secure local preferences.</li>
 <li><strong>Encryption:</strong> PDF protection uses 256-bit AES PDF encryption. Loss of password means the encrypted PDF cannot be recovered.</li>
 <li><strong>Delete anytime:</strong> delete files from the in-app document library or Android/iOS Settings &gt; Apps &gt; ScanLocker &gt; Storage &gt; Clear Storage / uninstall. All local data, passwords, and settings are removed permanently. There is no server copy because we have no accounts/servers.</li>
 <li><strong>Retention:</strong> data remains until you delete or uninstall. No automatic cloud backups.</li>

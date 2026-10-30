@@ -23,14 +23,14 @@ ul{margin:8px 0 16px 20px}
 <body>
 <div class="container">
 <h1>Privacy Policy — ScanLocker</h1>
-<div class="meta">App: ScanLocker • Package: com.scanlocker.app • Developer: ProDev Infotech • Effective: October 27, 2026 • Version 1.1.0</div>
-<div class="banner">On-Device Document Privacy: ScanLocker's core document scanning, OCR, and storage operate 100% on-device. We do not collect, transmit, sell, or share your document data. Advertising is provided via Google AdMob (Section 6). Data Safety: No document data collected or shared.</div>
+<div class="meta">App: ScanLocker • Package: com.scanlocker.app • Developer: ProDev Infotech • Effective: October 30, 2026 • Version 1.2.2</div>
+<div class="banner">On-Device Document Privacy: ScanLocker's core document scanning, OCR, and storage operate 100% on-device. We do not collect, transmit, sell, or share your document data. Advertising is provided via Google AdMob (Section 6); purchases are processed by the app store and RevenueCat (Section 7); consent-gated analytics and crash reports use Firebase (Section 8). Data Safety: No document data collected or shared.</div>
 
 <h2>1. Overview</h2>
-<p>ScanLocker is a document scanner app that captures documents, enhances images, creates PDFs, extracts text with OCR, recognizes business cards and ID cards, and protects files with passwords and app lock. Document scanning and file processing run locally on your device. No user accounts, no cloud database of documents, and no telemetry analytics. Advertisements are served via Google AdMob.</p>
+<p>ScanLocker is a document scanner app that captures documents, enhances images, creates PDFs, extracts text with OCR, recognizes business cards and ID cards, and protects files with passwords and app lock. Document scanning and file processing run locally on your device. No user accounts and no cloud database of documents. Optional, consent-gated analytics and crash diagnostics are described in Section 8. Advertisements are served via Google AdMob, and optional Pro purchases are validated through RevenueCat and the app store.</p>
 
 <h2>2. Data We Do NOT Collect or Share</h2>
-<p>We do not collect, store on our servers, or share your documents, photos, personal info, contacts, or financial data. Document processing stays 100% on your device. Advertising identifiers may be processed by Google AdMob as described in Section 6.</p>
+<p>We do not collect, store on our servers, or share your documents, photos, personal info, contacts, or financial data. Document processing stays 100% on your device. Advertising identifiers may be processed by Google AdMob as described in Section 6, purchase history plus an anonymous app user ID may be processed by RevenueCat as described in Section 7, and consent-gated analytics/crash diagnostics are described in Section 8.</p>
 <ul>
 <li><strong>No third-party document sharing:</strong> your scans and passwords are never sold, rented, or sent to brokers, advertisers, or analytics providers.</li>
 <li><strong>No cloud sync:</strong> scanned files, names, OCR text, app-lock state, and PDF passwords stay on the device.</li>
@@ -40,7 +40,7 @@ ul{margin:8px 0 16px 20px}
 <h2>3. Permissions — On-Device Use Only</h2>
 <div class="card"><b class="title">Camera</b><p>Purpose: capture documents, ID cards, receipts, and business cards for scanning. Used on-device only and never uploaded.</p></div>
 <div class="card"><b class="title">Photo picker / files access</b><p>Purpose: let you import a user-selected image for scanning. Modern Android/iOS photo-picker scoping is used; we do not request broad storage access.</p></div>
-<div class="card"><b class="title">Internet</b><p>Purpose: ad delivery via Google AdMob, consent management, opening Google Play or support pages, or update checks. Never used to upload or transmit your documents.</p></div>
+<div class="card"><b class="title">Internet</b><p>Purpose: ad delivery via Google AdMob, consent management, in-app purchase and restore validation via RevenueCat, consent-gated Firebase Analytics/Crashlytics (Section 8), opening Google Play/support pages, or update checks. Never used to upload or transmit your documents.</p></div>
 <div class="card"><b class="title">Contact saving</b><p>Purpose: save extracted business-card details through the system contact screen. We open the platform contact sheet with pre-filled data instead of reading your contacts list.</p></div>
 <p><em>Note: ScanLocker does not declare ACCESSIBILITY_SERVICE, FOREGROUND_SERVICE, or MANAGE_EXTERNAL_STORAGE.</em></p>
 
@@ -58,15 +58,35 @@ ul{margin:8px 0 16px 20px}
 <h2>6. Advertising (Google AdMob)</h2>
 <p>ScanLocker is supported by advertisements served by Google AdMob (Google Ireland Limited / Google LLC). When the app requests an ad, Google may collect and process device identifiers (including the Google advertising ID), IP address, and ad interaction events (impressions, clicks) for ad delivery, measurement, and fraud prevention. For more details, see Google's Privacy Policy at <a href="https://policies.google.com/privacy">policies.google.com/privacy</a> and <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
 <p><strong>Your documents are never shared:</strong> Google and advertisers never receive access to your scanned images, document contents, OCR extracted text, or passwords. Ad requests contain none of that data.</p>
+<p><strong>Rewarded ads are optional:</strong> a few Pro actions (receipt export, e-signature, page organizing, extra folders) can be unlocked once by choosing to watch a rewarded video — up to three times a day. Rewarded ads are never required: declining, or reaching the daily limit, only means the action needs Pro. Watching a rewarded ad grants that one action and does not change your ad privacy choices or consent state.</p>
 <p><strong>Consent &amp; Privacy Options:</strong> Where required by law (EEA, UK, Switzerland), Google's User Messaging Platform (UMP) consent form is presented before ads are served. You can review or change your ad privacy choices anytime in the app under Settings &gt; Legal &gt; Ad Privacy Settings.</p>
 
-<h2>7. Changes</h2>
+<h2>7. Purchases &amp; Subscriptions (RevenueCat)</h2>
+<p>ScanLocker Pro is an optional in-app purchase processed by Google Play Billing or the Apple App Store. We use RevenueCat to validate purchases, restore entitlements, and show live prices. RevenueCat receives an anonymous app user ID, purchase history and entitlement status, and limited device information (platform and app version). We never receive your payment card details — the store handles payment.</p>
+<ul>
+<li>Prices, billing periods and availability are shown in the app and are provided by the store at the time of purchase.</li>
+<li>Subscriptions renew automatically unless cancelled in your App Store or Google Play account. Manage or cancel there at any time.</li>
+<li>Lifetime and Founder Lifetime purchases are one-time payments and do not renew.</li>
+<li>Deleting the app does not cancel a subscription. Use “Restore purchases” after reinstalling.</li>
+</ul>
+<p>RevenueCat privacy policy: <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>.</p>
+
+<h2>8. Analytics &amp; Crash Reports (Firebase)</h2>
+<p>ScanLocker can use Google Firebase Analytics and Firebase Crashlytics to understand feature usage and fix defects. Neither service is given access to your documents, OCR text, file/folder names, tags, contact details, receipt amounts or passwords.</p>
+<ul>
+<li><strong>Analytics (free plan only):</strong> collection starts disabled. It turns on only after the ad-consent gate allows data collection and turns off for Pro users. Events are limited to product actions such as paywall viewed, purchase started/completed, scan saved, rewarded ad granted and ad load failures. Google may process app/device information (device model, OS and app version, language, approximate region derived from IP) and app-instance identifiers.</li>
+<li><strong>Crashlytics (everyone, including Pro):</strong> records crash stack traces, app/device state and a random app-instance identifier so defects can be fixed. Crash reports do not include document content or OCR text.</li>
+<li><strong>Your choice:</strong> withdraw ad/analytics consent at Settings → Legal → Ad Privacy Settings. Pro users send no analytics events. Crash diagnostics remain enabled because they are necessary to keep the app working.</li>
+</ul>
+<p>Firebase privacy information: <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>. Google retains Analytics and Crashlytics data according to its retention settings.</p>
+
+<h2>9. Changes</h2>
 <p>Material changes will update the Effective date above and be noted in Play release notes. Continued use after an update means acceptance.</p>
 
-<h2>8. Contact</h2>
+<h2>10. Contact</h2>
 <p>Email: app.prodevinfotech@gmail.com<br>App: ScanLocker (com.scanlocker.app)</p>
 
-<div class="footer">ScanLocker • Secure scanning. Documents stay on your device. Ads by Google AdMob (see &sect;6).</div>
+<div class="footer">ScanLocker • Secure scanning. Documents stay on your device. Ads by Google AdMob (see &sect;6); purchases by the app store and RevenueCat (see &sect;7); analytics/crash reports by Firebase (see &sect;8).</div>
 </div>
 </body>
 </html>
